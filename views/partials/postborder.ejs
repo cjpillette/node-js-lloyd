@@ -219,7 +219,7 @@
                       <h4 class="card-title">AQP AUDIT</h4>
                       <p class="card-text">Approved Quarantine Places available for inspection</p>
                       <a class="btn btn-default" href="#collapseAQPaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
-                      <a href="#" class="btn btn-primary">new entry</a>
+                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalAQP">new entry</a>
                     </div>
                   </div>
                 </div>
@@ -232,7 +232,7 @@
                       <h4 class="card-title">AHA</h4>
                       <p class="card-text">Chooks and pigs farm audits. RAMS audits</p>
                       <a class="btn btn-default" href="#collapseAHAaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
-                      <a href="#" class="btn btn-primary">new entry</a>
+                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalAHA">new entry</a>
                     </div>
                   </div>
                 </div>
@@ -245,7 +245,7 @@
                       <h4 class="card-title">AWA</h4>
                       <p class="card-text">Sales Yards and Abbatoir audits for animal welfare</p>
                       <a class="btn btn-default" href="#collapseAWAaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
-                      <a href="#" class="btn btn-primary">new entry</a>
+                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalAWA">new entry</a>
                     </div>
                   </div>
                 </div>
@@ -453,6 +453,7 @@
       </div>
 </div>
 
+<!-- modal Weeds -->
 <div id="modalWeeds" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -548,7 +549,7 @@
 </div>
 </div>
 
-
+<!-- modal Invasives -->
 <div id="modalInvasives" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -621,7 +622,8 @@
     </div>
   </div>
 
-  <div id="modalPED" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+<!-- modal PED -->
+<div id="modalPED" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -693,4 +695,256 @@
     </div>
 </div>
 </div>
+</div>
+
+<!-- modal AQP -->
+<div id="modalAQP" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridModalLabel">AQP new registration</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid bd-example-row">
+          <div class="row">
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-xs-1 col-form-label">Reg on:</label>
+                  <div class="col-xs-5">
+                    <input class="form-control" type="date" value="2017-01-05" id="example-date-input">
+                  </div>
+                  <label for="example-date-input" class="col-xs-1 col-form-label">Exp on:</label>
+                  <div class="col-xs-5">
+                    <input class="form-control" type="date" value="2018-01-05" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Class</label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputEmail3" placeholder="6.2">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Requiring follow up? <br>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2">Lat</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="-42.65436">
+                  </div>
+                  <label class="col-sm-2">Long</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="142.74987">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal AHA -->
+<div id="modalAHA" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridModalLabel">AHA audit</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid bd-example-row">
+          <div class="row">
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-xs-2 col-form-label">Date</label>
+                  <div class="col-xs-10">
+                    <input class="form-control" type="date" value="2017-01-05" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Farm</label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputEmail3" placeholder="Chookerrific">
+                  </div>
+                </div>
+                  <fieldset class="form-group">
+                    <legend>Audit type</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Chicken audit
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Pig audit
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                          RAMS audit
+                        </label>
+                      </div>
+                    </fieldset>
+                <div class="form-group row">
+                  <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2">Compliance</label>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Pass <br>
+                        <input class="form-check-input" type="checkbox"> DIR Issue <br>
+                        <input class="form-check-input" type="checkbox"> Re-inspection required <br>
+                        <input class="form-check-input" type="checkbox"> Infringment notice issued <br>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2">Lat</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="-42.65436">
+                  </div>
+                  <label class="col-sm-2">Long</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="142.74987">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+              </div>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- modal AWA -->
+<div id="modalAWA" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridModalLabel">AWA Audit - surveillance</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid bd-example-row">
+          <div class="row">
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-xs-2 col-form-label">Date</label>
+                  <div class="col-xs-10">
+                    <input class="form-control" type="date" value="2017-01-05" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Farm</label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputEmail3" placeholder="Powranna">
+                  </div>
+                </div>
+                  <fieldset class="form-group">
+                    <legend>Audit type</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Sales Yard
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Abbatoir
+                      </label>
+                    </div>
+                    </fieldset>
+                <div class="form-group row">
+                  <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2">Compliance</label>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Pass <br>
+                        <input class="form-check-input" type="checkbox"> DIR Issue <br>
+                        <input class="form-check-input" type="checkbox"> Re-inspection required <br>
+                        <input class="form-check-input" type="checkbox"> Infringment notice issued <br>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2">Lat</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="-42.65436">
+                  </div>
+                  <label class="col-sm-2">Long</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="lat" placeholder="142.74987">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+              </div>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
 </div>
