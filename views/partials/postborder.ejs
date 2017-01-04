@@ -1,7 +1,7 @@
 
 <div class="picture-background">
 
-  <h1 class="headline headline-white">POST-BORDER</h1>
+  <h1 class="headline headline-white" id="postborder">POST-BORDER</h1>
       <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-4">
@@ -12,7 +12,8 @@
                 <div class="card-block">
                   <h4 class="card-title">WEEDS</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapseWeeds" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
@@ -24,7 +25,8 @@
                 <div class="card-block">
                   <h4 class="card-title">INVASIVES</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapseInvasives" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseInvasives">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
@@ -36,12 +38,175 @@
                 <div class="card-block">
                   <h4 class="card-title">PED</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapsePED" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapsePED">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
           </div>
           <br>
+
+          <div class="collapse" id="collapseWeeds">
+            <div class="card card-block">
+              <h4>WEEDS</h4>
+              <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Case #</th>
+                      <th>Species</th>
+                      <th>Class</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5</td>
+                      <td>Naughty weed</td>
+                      <td>Declared</td>
+                      <td>-42.542/142.532</td>
+                      <td>To visit</td>
+                      <td>4/5/16</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Crazy weed</td>
+                      <td>Declared</td>
+                      <td>-42.008/142.042</td>
+                      <td>To visit</td>
+                      <td>28/4/16</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Naughty weed</td>
+                      <td>Declared</td>
+                      <td>-42.548/142.537</td>
+                      <td>Inspected</td>
+                      <td>24/4/16</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Middle weed</td>
+                      <td>not declared</td>
+                      <td>-42.782/142.511</td>
+                      <td>Letter sent</td>
+                      <td>22/4/16</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Nasty weed</td>
+                      <td>Declared</td>
+                      <td>-42.122/142.6788</td>
+                      <td>Letter sent</td>
+                      <td>20/4/16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#collapseWeeds" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            </div>
+          </div>
+          <div class="collapse" id="collapseInvasives">
+            <div class="card card-block">
+              <h4>INVASIVES</h4>
+              <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Case #</th>
+                      <th>Species</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5</td>
+                      <td>Feral cat</td>
+                      <td>-42.542/142.532</td>
+                      <td>Inspected</td>
+                      <td>30/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Rabbit</td>
+                      <td>-42.008/142.042</td>
+                      <td>Bait applied</td>
+                      <td>24/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Feral cat</td>
+                      <td>-42.548/142.537</td>
+                      <td>Inspected</td>
+                      <td>23/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Fox sighting</td>
+                      <td>-42.782/142.511</td>
+                      <td>Reported by MoP</td>
+                      <td>22/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Rabbit</td>
+                      <td>-42.122/142.6788</td>
+                      <td>Bait applied</td>
+                      <td>20/7/16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#collapseInvasives" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            </div>
+          </div>
+          <div class="collapse" id="collapsePED">
+            <div class="card card-block">
+              <h4>PED</h4>
+              <br>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Case #</th>
+                    <th>BRM</th>
+                    <th>Importance</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3</td>
+                    <td>Insect in rice</td>
+                    <td>Actionable</td>
+                    <td>-42.548/142.537</td>
+                    <td>Inspected</td>
+                    <td>24/4/16</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Turtle</td>
+                    <td>Actionable</td>
+                    <td>-42.782/142.511</td>
+                    <td>Euthanized</td>
+                    <td>22/4/16</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Snake</td>
+                    <td>Actionable</td>
+                    <td>-42.122/142.6788</td>
+                    <td>Surrendered to Wildlife</td>
+                    <td>20/4/16</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#collapsePED" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+          </div>
+        </div>
 
           <div class="row">
             <div class="col-sm-6 col-md-4">
@@ -52,7 +217,8 @@
                 <div class="card-block">
                   <h4 class="card-title">AQP AUDIT</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapseAQPaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
@@ -64,7 +230,8 @@
                 <div class="card-block">
                   <h4 class="card-title">AHA AUDIT</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapseAHAaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
@@ -76,11 +243,198 @@
                 <div class="card-block">
                   <h4 class="card-title">AWA AUDIT</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#collapseAWAaudits" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseWeeds">view all</a>
+                  <a href="#" class="btn btn-primary">new entry</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="collapse" id="collapseAQPaudits">
+            <div class="card card-block">
+              <h4>AQP Audits</h4>
+              <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>AQP #</th>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>BT457</td>
+                      <td>Big fruit</td>
+                      <td>F&V</td>
+                      <td>-42.542/142.532</td>
+                      <td>Accredited</td>
+                      <td>30/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>BT413</td>
+                      <td>Fresh Best</td>
+                      <td>F&V</td>
+                      <td>-42.008/142.042</td>
+                      <td>Accredited</td>
+                      <td>24/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>BT222</td>
+                      <td>Bunnings</td>
+                      <td>Plants</td>
+                      <td>-42.548/142.537</td>
+                      <td>Accredited</td>
+                      <td>23/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>BT265</td>
+                      <td>Pretty samples</td>
+                      <td>Labs</td>
+                      <td>-42.782/142.511</td>
+                      <td class="orange">Renewal pending</td>
+                      <td>22/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>BT102</td>
+                      <td>Green treasures</td>
+                      <td>Plants</td>
+                      <td>-42.122/142.6788</td>
+                      <td>Accredited</td>
+                      <td>20/7/16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#collapseAQPaudits" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            </div>
+          </div>
+          <div class="collapse" id="collapseAHAaudits">
+            <div class="card card-block">
+              <h4>AHA Audits</h4>
+              <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Farm #</th>
+                      <th>Name</th>
+                      <th>Commodity</th>
+                      <th>Location</th>
+                      <th>Inspection</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>AH485</td>
+                      <td>Happy hens</td>
+                      <td>Chooks</td>
+                      <td>-42.542/142.532</td>
+                      <td>Pass</td>
+                      <td>30/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AH212</td>
+                      <td>Hoin Hoin</td>
+                      <td>Pigs</td>
+                      <td>-42.008/142.042</td>
+                      <td>Pass</td>
+                      <td>24/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AH212</td>
+                      <td>Hoin Hoin</td>
+                      <td>Pigs</td>
+                      <td>-42.548/142.537</td>
+                      <td class="red">Issue #456</td>
+                      <td>23/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AH898</td>
+                      <td>Cocoricoo</td>
+                      <td>Chooks</td>
+                      <td>-42.782/142.511</td>
+                      <td>Pass</td>
+                      <td>22/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AH004</td>
+                      <td>Chick chooks</td>
+                      <td>Chooks</td>
+                      <td>-42.122/142.6788</td>
+                      <td class="red">Issue #122</td>
+                      <td>20/7/16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#collapseAHAaudits" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            </div>
+          </div>
+          <div class="collapse" id="collapseAWAaudits">
+            <div class="card card-block">
+              <h4>AWA Audits</h4>
+              <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Establishment #</th>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>AW102</td>
+                      <td>True beef</td>
+                      <td>Sales Yard</td>
+                      <td>-42.542/142.532</td>
+                      <td>Pass</td>
+                      <td>30/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AW102</td>
+                      <td>True beef</td>
+                      <td>Sales Yard</td>
+                      <td>-42.008/142.042</td>
+                      <td>Pass</td>
+                      <td>24/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AW876</td>
+                      <td>Dropchop</td>
+                      <td>Abbatoir</td>
+                      <td>-42.548/142.537</td>
+                      <td>Pass</td>
+                      <td>23/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AW334</td>
+                      <td>Dirtychop</td>
+                      <td>Abbatoir</td>
+                      <td>-42.782/142.511</td>
+                      <td class="red">Issue #872</td>
+                      <td>22/8/16</td>
+                    </tr>
+                    <tr>
+                      <td>AW908</td>
+                      <td>Gallop</td>
+                      <td>Sales Yard</td>
+                      <td>-42.122/142.6788</td>
+                      <td>Pass</td>
+                      <td>20/7/16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#collapseAWAaudits" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            </div>
+          </div>
+
+
 
           <br>
 
@@ -93,7 +447,7 @@
                 <div class="card-block">
                   <h4 class="card-title">SURVEY</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn btn-default" href="#" role="button">view all</a>
                 </div>
               </div>
             </div>

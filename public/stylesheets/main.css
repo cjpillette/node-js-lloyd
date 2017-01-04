@@ -1,4 +1,4 @@
-.jumbotron {
+/*.jumbotron {
   background: #532F8C;
   color: white;
   padding-bottom: 80px; }
@@ -23,7 +23,16 @@
     margin: auto;
     border: 2px solid white; }
     .jumbotron .lang-logo img {
-      max-width: 100%; }
+      max-width: 100%; }*/
+
+
+    .red {
+      color: red;
+    }
+
+    .orange {
+      color: orange;
+    }
 
       .picture-background {
         background: url('../images/postborder.png') top center no-repeat;
@@ -31,15 +40,17 @@
       }
 
       .black-white-icon img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0;
       }
 
       .card-block {
         text-align: center;
+        margin-top:0;
       }
 
       .headline-white {
@@ -48,3 +59,7 @@
         text-align: center;
         padding: 1.5rem 0;
       }
+
+    table thead tr th {
+      text-align: center;
+    }
