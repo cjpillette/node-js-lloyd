@@ -48,6 +48,15 @@
       margin-bottom: 0;
     }
 
+    img .border-icon {
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
 
     .card-block {
       text-align: center;

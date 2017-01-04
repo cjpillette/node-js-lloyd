@@ -1,3 +1,219 @@
 <h1 class="headline headline-black" id="border">BORDER</h1>
     <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Airport</h4>
+              <h6 class="card-subtitle text-muted">HBA, LST, DPO, BWT, FLS</h6>
+            </div>
+            <div class="black-white-icon">
+              <img src="/images/sliced-airplane.svg" alt="Card image plane">
+            </div>
+            <div class="card-block">
+              <p class="card-text">Record here details of an inspection and whether or not BRM was found</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#collapsePAX" class="card-link" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePAX">Passengers</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Cargo / freight</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Bin collection</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Seaport</h4>
+              <h6 class="card-subtitle text-muted">Hobart, Dev, Burnie, Bell Bay</h6>
+            </div>
+            <div class="black-white-icon">
+              <img src="/images/sliced-vessel.svg" alt="Card image vessel">
+            </div>
+            <div class="card-block">
+              <p class="card-text">Record here details of an inspection and whether or not BRM was found</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">Spirit of Tasmania</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Searoad</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">TOLL</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Road freight</h4>
+              <h6 class="card-subtitle text-muted">AQPs receiving freight</h6>
+            </div>
+            <div class="black-white-icon">
+              <img src="/images/sliced-truck.svg" alt="Card image truck">
+            </div>
+            <div class="card-block">
+              <p class="card-text">Record here details of an inspection and whether or not BRM was found</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">City freight run</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Australia Post</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">PQA 600</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collapsables -->
+      <div class="collapse" id="collapsePAX">
+        <div class="card card-block">
+          <h4>Flights</h4>
+          <br>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Flight #</th>
+                  <th>Time of arrival</th>
+                  <th>Inspection regime</th>
+                  <th>PAX #</th>
+                  <th>Non compliant PAX #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5/1/2017</td>
+                  <td>VA1328</td>
+                  <td>10:30AM</td>
+                  <td>DDT+BO</td>
+                  <td>180</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>5/1/2017</td>
+                  <td>JQ701</td>
+                  <td>9:50AM</td>
+                  <td>DDT+BO</td>
+                  <td>195</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>5/1/2017</td>
+                  <td>QF1504</td>
+                  <td>8:40AM</td>
+                  <td>DDT+BO</td>
+                  <td>150</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>5/1/2017</td>
+                  <td>VA1316</td>
+                  <td>7:15AM</td>
+                  <td>DDT</td>
+                  <td>145</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>4/1/2017</td>
+                  <td>TT501</td>
+                  <td>10:40PM</td>
+                  <td>BO</td>
+                  <td>130</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#collapsePAX" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPAX">New flight</button>
+        </div>
+      </div>
+
     </div>
+
+    <!-- modals -->
+    <div id="modalPAX" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">Flight</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Flight #</label>
+                      <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputEmail3" placeholder="VA1316">
+                      </div>
+                    </div>
+                        <fieldset class="form-group">
+                          <div class="row">
+                          <legend>Regime inspection</legend>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                              DDT + BO
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                              DDT
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                              BO (s)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option3">
+                              Flight missed
+                            </label>
+                          </div>
+                        </div>
+                        </fieldset>
+                      <!-- </div> -->
+                    <div class="form-group row">
+                      <label for="example-number-input" class="col-xs-3 col-form-label">Total PAX</label>
+                      <div class="col-xs-3">
+                        <input class="form-control" type="number" value="160">
+                      </div>
+                      <label for="example-number-input" class="col-xs-3 col-form-label">non-compliant PAX</label>
+                      <div class="col-xs-3">
+                        <input class="form-control" type="number" value="0" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
