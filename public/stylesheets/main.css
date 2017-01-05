@@ -25,6 +25,10 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }*/
 
+    .wrapper-blue {
+      background-color: #30546F;
+      padding-bottom: 2rem;
+    }
 
     .red {
       color: red;
@@ -48,15 +52,32 @@
       margin-bottom: 0;
     }
 
-    img .border-icon {
-      width: 150px;
-      height: 150px;
+    .black-white-icon-lg img {
+      width: 250px;
+      height: 250px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 0;
     }
 
+    .navbar {
+      padding-bottom: 0px;
+    }
+
+    .active {
+      font-weight: bold;
+    }
+
+    .gov-logo {
+      width:60px;
+      height:auto;
+      margin: 0 0;
+      padding: 0 0;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
 
     .card-block {
       text-align: center;
@@ -71,8 +92,8 @@
       padding-bottom: 40px;
     }
 
-    .headline-black {
-      color: #000;
+    .headline-blue {
+      color: #30546F;
       font-weight: bold;
       text-align: center;
       padding-top: 90px;
