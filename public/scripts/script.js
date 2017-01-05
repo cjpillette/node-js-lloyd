@@ -1,6 +1,6 @@
 $(function () {
     // Create the chart
-    Highcharts.chart('container1', {
+    Highcharts.chart('dummy-graph-1', {
         chart: {
             type: 'column'
         },
@@ -171,7 +171,7 @@ $(function () {
 
 $(function () {
 
-    Highcharts.chart('container2', {
+    Highcharts.chart('dummy-graph-2', {
         chart: {
             type: 'pyramid',
             marginRight: 100
@@ -208,7 +208,7 @@ $(function () {
 
 $(function () {
 
-    Highcharts.chart('container3', {
+    Highcharts.chart('dummy-graph-3', {
         chart: {
             type: 'pyramid',
             marginRight: 100
@@ -246,7 +246,7 @@ $(function () {
 
 $(function () {
 
-    Highcharts.chart('container4', {
+    Highcharts.chart('dummy-graph-4', {
         chart: {
             type: 'pyramid',
             marginRight: 100
@@ -299,7 +299,7 @@ $(function () {
     });
 
     // Build the chart
-    Highcharts.chart('container5', {
+    Highcharts.chart('dummy-graph-5', {
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -330,7 +330,7 @@ $(function () {
             name: 'Inspection Regime',
             data: [
                 { name: 'DDT+BO', y: 45 },
-                
+
                 { name: 'DDT alone', y: 30 },
                 { name: 'BO alone', y: 17 },
                 { name: 'Flight missed', y: 8 }
