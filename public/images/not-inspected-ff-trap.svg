@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Apple Watch 38mm Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-Watch-38mm-Copy">
+            <polygon id="Path-6" stroke="#000000" stroke-width="3" points="14.8523249 25.8812001 18.177225 23.0718372 20.9820002 21.155346 22.9202828 19.945353 25.515173 19.0415857 28.0487033 18.4492053 30.6544892 18.215235 32.8829407 18.4440441 35.2364057 18.9630222 38.5922725 20.3037632 40.8969937 21.6376228 42.7440968 22.9473972 44.318808 24.1522291 45.6073645 25.2951276 46.5449657 26.3514343 44.7500472 28.1119454 42.6139222 29.6459413 40.1675572 31.353121 37.7905805 32.6726441 34.2575157 33.9170445 31.7635538 34.2502226 27.9431873 34.2880708 25.0019295 33.60107 22.267116 32.075676 19.9434707 30.6087746 17.8750135 29.0730583 16.2177245 27.6749717"></polygon>
+            <ellipse id="Oval-2" stroke="#000000" fill="#000000" cx="30.5" cy="26.5" rx="7.5" ry="7.5"></ellipse>
+            <ellipse id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="27" cy="24.5" rx="2" ry="2.5"></ellipse>
+            <path d="M43.5,6.5 L21.5,49.5" id="Line" stroke="#F10A0A" stroke-width="2" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

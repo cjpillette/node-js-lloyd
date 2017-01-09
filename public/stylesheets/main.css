@@ -38,6 +38,16 @@
       color: orange;
     }
 
+    .grey-background {
+      background-color: #C0C0C0;
+      color: #FFF;
+    }
+
+    .seagreen-background {
+      background-color: seagreen;
+      color: #FFF;
+    }
+
     .picture-background {
       background: url('../images/postborder.png') top center no-repeat;
       background-size: cover;
@@ -60,6 +70,7 @@
       margin-right: auto;
       margin-bottom: 0;
     }
+
 
     .navbar {
       padding-bottom: 0px;
