@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="48px" viewBox="0 0 37 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-eye" transform="translate(2.000000, 1.000000)">
+            <g id="Page-1">
+                <g id="Apple-Watch-38mm-Copy">
+                    <polygon id="Path-6" stroke="#000000" stroke-width="3" points="0.85232486 18.8812001 4.177225 16.0718372 6.9820002 14.155346 8.9202828 12.945353 11.515173 12.0415857 14.0487033 11.4492053 16.6544892 11.215235 18.8829407 11.4440441 21.2364057 11.9630222 24.5922725 13.3037632 26.8969937 14.6376228 28.7440968 15.9473972 30.318808 17.1522291 31.6073645 18.2951276 32.5449657 19.3514343 30.7500472 21.1119454 28.6139222 22.6459413 26.1675572 24.353121 23.7905805 25.6726441 20.2575157 26.9170445 17.7635538 27.2502226 13.9431873 27.2880708 11.0019295 26.60107 8.267116 25.075676 5.9434707 23.6087746 3.8750135 22.0730583 2.2177245 20.6749717"></polygon>
+                    <circle id="Oval-2" stroke="#000000" fill="#000000" cx="16.5" cy="19.5" r="7.5"></circle>
+                    <ellipse id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="13" cy="17.5" rx="2" ry="2.5"></ellipse>
+                    <path d="M30,0 L8,43" id="Line" stroke="#030303" stroke-width="2"></path>
+                    <path d="M32,0 L8,46" id="Line-Copy" stroke="#FFFFFF" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

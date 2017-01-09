@@ -53,6 +53,11 @@
       background-size: cover;
     }
 
+    .brand-title {
+      color: #000;
+      padding-left: 60px;
+    }
+
     .black-white-icon img {
       width: 150px;
       height: 150px;
