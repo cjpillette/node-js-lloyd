@@ -73,8 +73,15 @@
 
 
     .navbar {
-      padding-bottom: 0px;
+      padding-bottom: 10px;
     }
+
+    .nav-item {
+      padding-left: 10px;
+      padding-right: 15px;
+      padding-top:0;
+    }
+
 
     .active {
       font-weight: bold;
@@ -101,6 +108,10 @@
       text-align: center;
       padding-top: 90px;
       padding-bottom: 40px;
+    }
+
+    .headline-preborder {
+      padding-top: 100px;
     }
 
     .headline-blue {
