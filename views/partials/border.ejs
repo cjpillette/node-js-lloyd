@@ -33,7 +33,7 @@
               <p class="card-text">Record here details of an inspection and whether or not BRM was found</p>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a href="#collapseSPoTDev" class="card-link page-scroll" data-toggle="collapse" aria-expanded="false">Spirit of Tasmania</a></li>
-                <li class="list-group-item"><a href="#collapseSearoad" class="card-link page-scroll" data-toggle="collapse" aria-expanded="false">Searoad / TT Line</a></li>
+                <li class="list-group-item"><a href="#collapseSearoad" class="card-link page-scroll" data-toggle="collapse" aria-expanded="false">Searoad / TT Line / ICIR</a></li>
                 <li class="list-group-item"><a href="#" class="card-link">Grain / QTrack</a></li>
               </ul>
             </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <!-- Collapsables -->
+<!-- Collapsables -->
       <!-- PAX collapsable -->
       <div class="collapse" id="collapsePAX">
         <div class="card card-block">
@@ -249,7 +249,7 @@
                     </tr>
                   </tbody>
                 </table>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPAX">New Amnesty bin</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBinCollection">New Amnesty bin</button>
           </div>
           <div class="col-md-4 col-sm-12">
             <h4>Declaration Bin</h4>
@@ -295,7 +295,7 @@
                   </tr>
                 </tbody>
               </table>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPAX">New Declaration bin</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBinCollection">New Declaration bin</button>
           </div>
           <div class="col-md-4 col-sm-12">
             <h4>Seizure Bin</h4>
@@ -538,14 +538,13 @@
                   </tr>
                 </tbody>
               </table>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSearoad">New ICIR</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalICIR">New ICIR</button>
           </div>
         </div>
           <br>
           <a href="#collapseSearoad" data-toggle="collapse" class="btn btn-default btn-sm active" role="button">Close</a>
-
       </div>
-    </div>
+      </div>
 
     <!-- City freight run collapsable -->
     <div class="collapse" id="collapseCityFreight">
@@ -747,7 +746,8 @@
       </div>
     </div>
 
-    <!-- modals -->
+<!-- modals -->
+    <!-- PAX modal -->
     <div id="modalPAX" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -838,3 +838,397 @@
         </div>
       </div>
     </div>
+
+    <!-- Airport freight modal -->
+    <div id="modalFreight" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">Freight</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">From flight #</label>
+                      <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputEmail3" placeholder="VA1316">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="row">
+                        <label for="example-number-input" class="col-xs-3 col-form-label">Commodity</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="Cut flowers">
+                        </div>
+                        <label for="example-number-input" class="col-xs-3 col-form-label"># of boxes or animals</label>
+                        <div class="col-xs-2">
+                          <input class="form-control" type="number" value="5" >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="row">
+                        <label for="example-number-input" class="col-xs-2 col-form-label">Importer</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="Bouquet express">
+                        </div>
+                        <label for="example-number-input" class="col-xs-2 col-form-label">Exporter</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" value="Various" >
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <textarea class="form-control" rows="3" placeholder="comments"></textarea>
+                    <br>
+                    <div class="float-xs-right">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Non-compliant?
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bin Collection modal -->
+    <div id="modalBinCollection" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">Bin Collection</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="amnesty" checked> Amnesty
+                      </label>
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio12" value="declaration"> Declaration
+                      </label>
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="seizure"> Seizure
+                      </label>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-4 col-form-label">Weight (in Kg)</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="7.5" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="float-xs-right">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Chopped and inspected?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <textarea class="form-control" rows="3" placeholder="comments"></textarea>
+                    </div>
+                    <div class="form-group row">
+                      <div class="float-xs-right">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> BRM found?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPOT modal -->
+    <div id="modalSPoTDev" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">SPoT - Devonport side</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Vessel</label>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="SPoT1">
+                          </div>
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Voyage#</label>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="number" placeholder="2897">
+                          </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="time-input" class="col-xs-3 offset-xs-5">Clearing time</label>
+                      <div class="col-xs-4">
+                        <input class="form-control" type="time" name="time" placeholder="01:10">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-4 col-form-label"># of washes (car+aquatic)</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="8" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-4 col-form-label">Declaration bin weight (Kg)</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="4" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-4 col-form-label">Seizure bin weight (Kg)</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="1.5" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="float-xs-right">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Chopped and inspected?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <textarea class="form-control" rows="3" placeholder="comments"></textarea>
+                    </div>
+                    <div class="form-group row">
+                      <div class="float-xs-right">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> BRM found?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TTLINE Searoad modal -->
+    <div id="modalSearoad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">TTLine / Searoad</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Vessel</label>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="SPoT1">
+                          </div>
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Voyage#</label>
+                          <div class="col-sm-4">
+                            <input class="form-control" type="number" placeholder="2897">
+                          </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of FLC/LCL</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="189" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of Empties</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="2" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="example-number-input" class="col-xs-6 col-form-label"># of Machineries</label>
+                      <div class="col-xs-6">
+                        <input class="form-control" type="number" placeholder="2" >
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of Non-chargeables</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="0" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of O/S units</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="0" >
+                        </div>
+                      </div>
+                    <div class="form-group row">
+                      <textarea class="form-control" rows="3" placeholder="comments"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ICIR modal -->
+    <div id="modalICIR" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">ICIR</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="radio-inline offset-xs-2 col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="ICIRBurnie" checked> Burnie
+                      </label>
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="ICIRDevonport"> Devonport
+                      </label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of Truck inspected</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="189" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-6 col-form-label"># of Truck scraped</label>
+                        <div class="col-xs-6">
+                          <input class="form-control" type="number" placeholder="2" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="example-number-input" class="col-xs-6 col-form-label"># of Truck washed</label>
+                      <div class="col-xs-6">
+                        <input class="form-control" type="number" placeholder="2" >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- City freight run modal -->
+
+    <!-- Australia Post modal -->
+
+    <!-- PQA600 modal -->
