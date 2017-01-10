@@ -872,7 +872,7 @@
                         </div>
                         <label for="example-number-input" class="col-xs-3 col-form-label"># of boxes or animals</label>
                         <div class="col-xs-2">
-                          <input class="form-control" type="number" value="5" >
+                          <input class="form-control" type="number" placeholder="5" >
                         </div>
                       </div>
                     </div>
@@ -884,7 +884,7 @@
                         </div>
                         <label for="example-number-input" class="col-xs-2 col-form-label">Exporter</label>
                         <div class="col-xs-4">
-                          <input class="form-control" type="text" value="Various" >
+                          <input class="form-control" type="text" placeholder="Various" >
                         </div>
                     </div>
                     </div>
@@ -1017,16 +1017,10 @@
                           <div class="col-sm-4">
                             <input class="form-control" type="text" placeholder="SPoT1">
                           </div>
-                          <label for="inputEmail3" class="col-sm-2 col-form-label">Voyage#</label>
-                          <div class="col-sm-4">
-                            <input class="form-control" type="number" placeholder="2897">
+                          <label for="time-input" class="col-xs-2">Cleared in:</label>
+                          <div class="col-xs-4">
+                            <input class="form-control" type="time" name="time" placeholder="01:10">
                           </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="time-input" class="col-xs-3 offset-xs-5">Clearing time</label>
-                      <div class="col-xs-4">
-                        <input class="form-control" type="time" name="time" placeholder="01:10">
-                      </div>
                     </div>
                     <div class="form-group row">
                         <label for="example-number-input" class="col-xs-4 col-form-label"># of washes (car+aquatic)</label>
@@ -1228,7 +1222,233 @@
     </div>
 
     <!-- City freight run modal -->
+    <div id="modalCityFreight" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">City Freight Run</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Freight shed (AQP)</label>
+                      <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputEmail3" placeholder="Toll IPEC">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="row">
+                        <label for="example-number-input" class="col-xs-3 col-form-label">Commodity</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="Live fish">
+                        </div>
+                        <label for="example-number-input" class="col-xs-3 col-form-label"># of boxes or animals</label>
+                        <div class="col-xs-2">
+                          <input class="form-control" type="number" placeholder="3" >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="row">
+                        <label for="example-number-input" class="col-xs-2 col-form-label">Importer</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="Hobart Aqua">
+                        </div>
+                        <label for="example-number-input" class="col-xs-2 col-form-label">Exporter</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="Swimmish" >
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <textarea class="form-control" rows="3" placeholder="comments"></textarea>
+                    <br>
+                    <div class="float-xs-right">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Non-compliant?
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Australia Post modal -->
+    <div id="modalAustraliaPost" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">Australia Post</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="radio-inline offset-xs-2 col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="Mornington" checked> Mornington
+                      </label>
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="KingsMeadow"> Kings Meadow
+                      </label>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-5 offset-xs-3 col-form-label">Weight presented (Kg)</label>
+                      <div class="col-sm-4">
+                        <input type="number" class="form-control"  placeholder="1230">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-5 offset-xs-3 col-form-label"># of items opened</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="3" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-xs-4 offset-xs-8">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Non-compliant?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-5 offset-xs-3 col-form-label"># of non-compliant items</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="1" >
+                        </div>
+                    </div>
+                    <br>
+                    <textarea class="form-control" rows="5" placeholder="comments"></textarea>
+                    <br>
+
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- PQA600 modal -->
+    <div id="modalPQA600" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridModalLabel">PQA600 inspection</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="form-group row">
+                      <label for="example-datetime-local-input" class="col-xs-4 col-form-label">Date and time</label>
+                      <div class="col-xs-8">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="radio-inline offset-xs-2 col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="NurseryStock" checked> Nursery Stock
+                      </label>
+                      <label class="radio-inline col-md-4">
+                        <input type="radio" name="inlineRadioOptions"  value="F&V"> F&V
+                      </label>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-5 offset-xs-3 col-form-label">Freight shed (AQP)</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control"  placeholder="Tepid Freight">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-5 offset-xs-3 col-form-label">Importer</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="text" placeholder="The Tall Tree" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-xs-4 offset-xs-8">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Non-compliant?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-xs-5 offset-xs-3 col-form-label">Direction #</label>
+                        <div class="col-xs-4">
+                          <input class="form-control" type="number" placeholder="29847" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                    <textarea class="form-control" rows="5" placeholder="comments"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted"> Attach pictures or any files</small>
+                  </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
